@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MarkDown to HTML</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/kimbie.dark.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equive="expires" content="0">
+  </head>
+  <body>
+    <div class="elements">
+      <span class="title">
+        <strong>
+          md to HTML convertor
+        </strong>
+      </span>
+      <input class="input" type="file" onchange="onChange(event)" accept=".md" multiple></input>
+      <span class="button" title="Save the preview as a HTML file" id="savebutton" onClick="saveAsHTML();">Save as HTML</span>
+      <span class="button" title="Refresh the preview" id="refresh-button" onClick="refresh();">&#8635;</span>
+      <span id="ltr-checkbox-description">
+        <bdi>
+          LTR (Left to right)
+          <input type="checkbox" id="ltr-checkbox" name="ltr-checkbox" onChange = "changeDirection();">
+        </bdi>
+      </span>
+    </div>
+    <div id="manualContent"></div>
+    <script src="./js/fileSaver.js"></script>
+    <script src="./style/highlight.pack.js"></script>
+    <script src="./js/marked.js"></script>
+    <script src="./js/mdToHTML.js"></script>
+  </body>
+</html>

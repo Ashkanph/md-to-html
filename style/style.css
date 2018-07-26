@@ -1,0 +1,268 @@
+
+*{
+  font-family: 'Vazir';
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  direction: rtl;
+  color: #24292e;
+}
+
+.ltr{
+  direction: ltr !important;
+}
+
+.rtl{
+  direction: rtl !important;
+}
+
+@media screen and (max-width: 600px) {
+  body {  
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  body {  
+    padding: 50px;
+  }
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url("./fonts/Vazir.woff");
+}
+
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url("./fonts/DejaVuSansMono.ttf");
+}
+
+#manual {
+  width: 100%;
+  outline-offset: -22px;
+  padding: 10px 15px 65px 15px;
+  font-family: 'Vazir';
+  line-height: 3rem;
+}
+#manual p {
+  font-size: 1.1rem;
+  text-align: justify;
+  padding: 0.5rem;
+}
+#manual img {
+  margin: 0 auto;
+  display: block;
+  max-width: 90%;
+}
+
+.rtl ul li {
+  font-size: 1.1rem;
+  margin-right: 3rem !important;
+}
+
+.rtl ol li {
+  font-size: 1.1rem;
+  margin-right: 3rem;
+}
+
+.ltr ul li {
+  font-size: 1.1rem;
+  margin-left: 3rem;
+}
+
+.ltr ol li {
+  font-size: 1.1rem;
+  margin-left: 3rem;
+}
+
+#manual h1, #manual h2, #manual h3 {
+  padding: 12px;
+  text-shadow: none;
+}
+#manual h1 {
+  padding-top: 60px;
+  color: rgba(22, 19, 19, 0.8);
+  font-weight: 900;
+  font-size: 2.1rem;
+}
+#manual h2 {
+  font-weight: 500;
+  color: rgba(22, 19, 19, 0.6);
+  font-size: 1.8rem;
+}
+#manual h3 {
+  font-weight: 300;
+  color: rgba(22, 19, 19, 0.4);
+  font-size: 1.5rem;
+}
+
+#manual h4 {
+  font-weight: 200;
+  color: rgba(22, 19, 19, 0.4);
+  font-size: 1.3rem;
+}
+
+#manual h5 {
+  font-weight: 200;
+  color: rgba(22, 19, 19, 0.4);
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 48rem) {
+  #list {
+    width: 20%;
+  }
+
+  #content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 80rem) {
+  #list.none {
+    display: inline-block;
+  }
+
+  #content {
+    width: 80%;
+  }
+}
+@media print {
+  #list {
+    display: none;
+  }
+
+  #content {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #content p,
+  #content li {
+    font-size: 1rem;
+  }
+}
+.manual-anchor {
+  top: 45px;
+}
+
+#manualContent {
+  max-width: 1448px;
+  margin: 0 auto;
+}
+
+.manual-link-icon {
+  color: #8f8f8f;
+}
+.manual-link-icon:hover {
+  color: black;
+}
+
+code, ul li pre code{
+    font-family: 'DejaVuSansMono', "Menlo", "Liberation Mono", "Consolas", "DejaVu Sans Mono", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace !important;
+    white-space: pre;
+    word-wrap: normal;
+    padding: 3px 7px;
+    color: #24292e;
+    background-color: rgba(27,31,35,0.05);
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+pre code span, code span{
+  font-family: 'DejaVuSansMono', "Menlo", "Liberation Mono", "Consolas", "DejaVu Sans Mono", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace !important;
+}
+
+pre, .manual ul li pre, #manual ul li pre {
+  margin: 0;
+  direction: ltr !important;
+}
+pre code, .manual ul li pre code, #manual ul li pre code{
+  direction: ltr !important;
+  line-height: 1.45;
+  padding: 0;
+  padding-left: 3em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  position: relative;
+  display: block;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* ----------- Selection page ------------- */
+
+input, #savebutton{
+  font-size: 15px;
+}
+#savebutton{
+  padding: 3px 7px !important;
+}
+.title{
+  float: left;
+  color: #ccc;
+}
+
+#manualContent{
+  padding-top: 60px;
+}
+
+.elements{
+    padding: 12px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #444;
+    height: 50px;
+    z-index: 1;
+}
+
+.input{
+  color: white;
+}
+
+input, #savebutton{
+    font-size: 15px;
+}
+#savebutton{
+    padding: 0 7px !important;
+}
+#ltr-checkbox-description{
+    margin: 3px 15px !important;
+    color: white;
+}
+
+.button{
+  background-color: white;
+  color: #444;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-align: center;
+  line-height: 2.1rem;
+  border-radius: 2px;
+}
+
+.button:hover{
+  cursor: pointer;
+  background-color: #eee;
+}
+
+#refresh-button{
+  width: 2.2rem;
+  vertical-align: middle;
+}
