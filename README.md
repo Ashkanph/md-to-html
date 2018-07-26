@@ -1,5 +1,7 @@
 # md-to-html
-A web based markdown (md) to html converter
+A web based markdown (md) to html converter.
+
+You can use and test it online [at this address](http://ashkanph.github.io/md-to-html).
 
 ## Features
 * Support both LTR (Left to Right) and RTL (Right to let) languages
@@ -10,9 +12,11 @@ A web based markdown (md) to html converter
         ```javascript
             //my codes
         ```
-* Works online
+* Preview the markdown file
+* A button for refreshing the uploaded md file 
+* Works in browsers (New Firefox and Chrome fully supported)
 * Standalone html file (Does not need to stylesheet files).
- * If you want to use it or Persian language, It would be better to copy the 
+ * If you want to use it for Persian language, It would be better to copy the 
    style folder along the html file. The Vazir ont will make the texts look more 
    beautiful.  
 
