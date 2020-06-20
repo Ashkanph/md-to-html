@@ -47,19 +47,19 @@ body {
   src: url("./fonts/DejaVuSansMono.ttf");
 }
 
-#manual {
+.markdown-content {
   width: 100%;
   outline-offset: -22px;
-  padding: 10px 15px 65px 15px;
+  padding: 15px;
   font-family: 'Vazir';
   line-height: 3rem;
 }
-#manual p {
+.markdown-content p {
   font-size: 1.1rem;
   text-align: justify;
   padding: 0.5rem;
 }
-#manual img {
+.markdown-content img {
   margin: 0 auto;
   display: block;
   max-width: 90%;
@@ -85,34 +85,34 @@ body {
   margin-left: 3rem;
 }
 
-#manual h1, #manual h2, #manual h3 {
+.markdown-content h1, .markdown-content h2, .markdown-content h3 {
   padding: 12px;
   text-shadow: none;
 }
-#manual h1 {
+.markdown-content h1 {
   padding-top: 60px;
   color: rgba(22, 19, 19, 0.8);
   font-weight: 900;
   font-size: 2.1rem;
 }
-#manual h2 {
+.markdown-content h2 {
   font-weight: 500;
   color: rgba(22, 19, 19, 0.6);
   font-size: 1.8rem;
 }
-#manual h3 {
+.markdown-content h3 {
   font-weight: 300;
   color: rgba(22, 19, 19, 0.4);
   font-size: 1.5rem;
 }
 
-#manual h4 {
+.markdown-content h4 {
   font-weight: 200;
   color: rgba(22, 19, 19, 0.4);
   font-size: 1.3rem;
 }
 
-#manual h5 {
+.markdown-content h5 {
   font-weight: 200;
   color: rgba(22, 19, 19, 0.4);
   font-size: 1.2rem;
@@ -155,7 +155,7 @@ body {
   top: 45px;
 }
 
-#manualContent {
+.markdown-container {
   max-width: 1448px;
   margin: 0 auto;
 }
@@ -182,11 +182,11 @@ pre code span, code span{
   font-family: 'DejaVuSansMono', "Menlo", "Liberation Mono", "Consolas", "DejaVu Sans Mono", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace !important;
 }
 
-pre, .manual ul li pre, #manual ul li pre {
+pre, .manual ul li pre, .markdown-content ul li pre {
   margin: 0;
   direction: ltr !important;
 }
-pre code, .manual ul li pre code, #manual ul li pre code{
+pre code, .manual ul li pre code, .markdown-content ul li pre code{
   direction: ltr !important;
   line-height: 1.45;
   padding: 0;
@@ -212,12 +212,14 @@ input, #savebutton{
   padding: 3px 7px !important;
 }
 
-#manualContent{
+.markdown-container{
   padding-top: 60px;
+  width: 100%;
+  overflow-x: auto;
 }
 
 @media screen and (max-width: 769px) {
-  #manualContent{
+  .markdown-container{
     padding-top: 155px;
   }
 }
@@ -261,7 +263,6 @@ Header{
 }
 
 .options, .title {
-  /* height: 100%; */
   display: flex;
   align-items: center;
 }
@@ -294,9 +295,12 @@ input, #savebutton{
 #savebutton{
     padding: 0 7px !important;
 }
-#rtl-checkbox-description{
+#rtl-checkbox-container, #concat-checkbox-container{
     margin: 3px 15px !important;
     color: white;
+}
+#concat-checkbox-container{
+    display: none;
 }
 
 .button{
@@ -319,6 +323,9 @@ input, #savebutton{
   vertical-align: middle;
 }
 
+.multiple-files-desc {
+  padding-left: 2rem;
+}
 
 @media print{    
   .no-print, .no-print *{
