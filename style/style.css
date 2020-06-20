@@ -14,7 +14,6 @@ body {
   margin: 0;
   padding: 0;
   
-  direction: rtl;
   color: #24292e;
 }
 
@@ -212,28 +211,81 @@ input, #savebutton{
 #savebutton{
   padding: 3px 7px !important;
 }
-.title{
-  float: left;
-  color: #ccc;
-}
 
 #manualContent{
   padding-top: 60px;
 }
 
-.elements{
-    padding: 12px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: #444;
-    height: 50px;
-    z-index: 1;
+@media screen and (max-width: 769px) {
+  #manualContent{
+    padding-top: 155px;
+  }
+}
+
+Header{
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #444;
+  height: 50px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 769px) {
+  Header{
+    flex-direction: column;
+    padding: 0.6rem 0;
+    height: 155px;
+  } 
+}
+
+.title{
+  color: #ccc;
+}
+
+.title .my-website, .title .github-page, .title .title-text {
+  margin: 0 0.4rem;
+  font-size: 18px;
+}
+
+.title:first-child {
+  margin-left: 0.8rem;
+}
+
+.title img, .title svg {
+  display: block;
+}
+
+.options, .title {
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+}
+
+.options {
+  direction: rtl;
+}
+
+@media screen and (max-width: 769px) {
+  .options{
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  .options *{
+    margin: 0.2rem !important;
+  }
 }
 
 .input{
   color: white;
+}
+
+.options * {
+  margin: 0 0.4rem;
 }
 
 input, #savebutton{
@@ -242,7 +294,7 @@ input, #savebutton{
 #savebutton{
     padding: 0 7px !important;
 }
-#ltr-checkbox-description{
+#rtl-checkbox-description{
     margin: 3px 15px !important;
     color: white;
 }
