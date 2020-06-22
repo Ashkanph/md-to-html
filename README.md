@@ -10,9 +10,11 @@ You can use and test it online [at this address](http://ashkanph.github.io/md-to
   * You can concatenate multiple md files and convert them to one HTML page (After selecting some md files, check the <strong>concatenate checkbox</strong>, review the rendered HTMl page and then click on the <strong>save button</strong>)
 * Highlight inline codes in the markdown files with dark Kimbie theme.
   * You must specify your code like this:
-        ```javascript
-            //my codes
-        ```
+     <pre lang="no-highlight"><code>
+     ```javascript
+       //my codes
+     ```
+     </code></pre>
 * Preview the markdown file
 * A button for refreshing the uploaded md file 
 * Works in browsers (New Firefox and Chrome fully supported)
