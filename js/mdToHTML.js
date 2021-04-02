@@ -12,7 +12,7 @@ function onChange(event) {
 function readTheFile() {
 
     if(files == null || files.length < 1){
-        alert('You have not selevted any file.');
+        alert('You have not selected any file.');
         return;
     }
 
